@@ -1,0 +1,33 @@
+## Title: Weapon Swap Auto Macros
+## Interface: 90002
+## Notes: Keeps weapon swap macros updated when your equipment sets change
+## Author: Lord Katerchen
+## Email: lord dot katerchen at gmail dot com
+## Version: 1.07
+## X-License: None
+## X-Credits: None
+## X-Curse-Project-ID: 403057
+## X-WoWI-ID: None
+## OptionalDeps: myAddOns
+## SavedVariablesPerCharacter: WeaponSwapAutoMacros
+## DefaultState: Enabled
+## LoadOnDemand: 0
+## LoadManagers: AddonLoader
+## X-LoadOn-Always: delayed
+## X-Category: Warrior
+## X-Website: https://github.com/lordkaterchen/WeaponSwapAutoMacros
+
+libs\LibStub\LibStub.lua
+libs\AceGUI-3.0\AceGUI-3.0.xml
+libs\AceConfig-3.0\AceConfig-3.0.xml
+libs\AceEvent-3.0\AceEvent-3.0.xml
+libs\AceDB-3.0\AceDB-3.0.xml
+libs\AceDBOptions-3.0\AceDBOptions-3.0.xml
+
+specs\Arms.lua
+specs\Fury.lua
+specs\Retribution.lua
+specs\Holy.lua
+specs\Survival.lua
+
+WeaponSwapAutoMacrosMain.lua

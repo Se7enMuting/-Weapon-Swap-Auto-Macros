@@ -1,0 +1,18 @@
+1.07-release:
+	- Updated for 9.02
+	- Implemented Macros for Survival hunter
+
+1.06-release:
+	- Softened the requirements for fury weapons to allow two handed or one handed weapons
+	- Improved integrating updates of the macro patterns into existing configurations
+	- Implemented Macros for Paladins to give Holy a twohanded option and retribution Paladins a shield option
+
+1.05-release:
+	- Added Sharpen Blade + Mortal Strike in a single macro to the Arms Mmacro options
+
+1.04-release:
+	- Fixed an error where trying to recreate the macros actually also restored the defaults
+	- Fixed an error where restoring the defaults would render the options unusable until a UI reload
+
+1.01-release:
+	Release in time for the prepatch. Full initial functionality. Works eith 8.3 and 9.0
