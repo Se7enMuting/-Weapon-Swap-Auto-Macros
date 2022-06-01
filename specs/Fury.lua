@@ -22,13 +22,13 @@ FURY["Set2OffTypeDesc"] = "shield"
 
 FURY["Macros"] = {}
 
-FURY["Macros"]["Rampage"] = {
+FURY["Macros"]["暴怒"] = {
   Active=true,
   MacroName="RA WSAM FURY",
   IconId = "INV_Misc_QuestionMark",
   Body = [[
 #showtooltip
-/cast Rampage
+/cast 暴怒
 /equipslot 16 %s
 /equipslot 17 %s
 ]],
@@ -36,13 +36,13 @@ FURY["Macros"]["Rampage"] = {
   Formats = {"Set1Main", "Set1Off"}
 }
 
-FURY["Macros"]["Raging Blow"] = {
+FURY["Macros"]["怒击"] = {
   Active=true,
   MacroName="RB WSAM FURY",
   IconId = "INV_Misc_QuestionMark",
   Body = [[
 #showtooltip
-/cast Raging Blow
+/cast 怒击
 /equipslot 16 %s
 /equipslot 17 %s
 ]],
@@ -50,13 +50,13 @@ FURY["Macros"]["Raging Blow"] = {
   Formats = {"Set1Main", "Set1Off"}
 }
 
-FURY["Macros"]["Onslaught"] = {
+FURY["Macros"]["强攻"] = {
   Active=true,
   MacroName="OS WSAM FURY",
   IconId = "INV_Misc_QuestionMark",
   Body = [[
 #showtooltip
-/cast Onslaught
+/cast 强攻
 /equipslot 16 %s
 /equipslot 17 %s
 ]],
@@ -64,13 +64,13 @@ FURY["Macros"]["Onslaught"] = {
   Formats = {"Set1Main", "Set1Off"}
 }
 
-FURY["Macros"]["Siegebreaker"] = {
+FURY["Macros"]["破城者"] = {
   Active=true,
   MacroName="SIEGE WSAM FURY",
   IconId = "INV_Misc_QuestionMark",
   Body = [[
 #showtooltip
-/cast Siegebreaker
+/cast 破城者
 /equipslot 16 %s
 /equipslot 17 %s
 ]],
@@ -78,13 +78,13 @@ FURY["Macros"]["Siegebreaker"] = {
   Formats = {"Set1Main", "Set1Off"}
 }
 
-FURY["Macros"]["Shield Block"] = {
+FURY["Macros"]["盾牌格挡"] = {
   Active=true,
   MacroName="SB WSAM FURY",
   IconId = "INV_Misc_QuestionMark",
   Body = [[
 #showtooltip
-/cast Shield Block
+/cast 盾牌格挡
 /equipslot 16 %s
 /equipslot 17 %s
 ]],
@@ -92,13 +92,13 @@ FURY["Macros"]["Shield Block"] = {
   Formats = {"Set2Main", "Set2Off"}
 }
 
-FURY["Macros"]["Shield Slam"] = {
+FURY["Macros"]["盾牌猛击"] = {
   Active=true,
   MacroName="SS WSAM FURY",
   IconId = "INV_Misc_QuestionMark",
   Body = [[
 #showtooltip
-/cast Shield Slam
+/cast 盾牌猛击
 /equipslot 16 %s
 /equipslot 17 %s
 ]],
@@ -107,7 +107,7 @@ FURY["Macros"]["Shield Slam"] = {
 }
 
 
-FURY["Macros"]["Weapon Swap"] = {
+FURY["Macros"]["武器切换"] = {
   Active=true,
   MacroName="WS WSAM FURY",
   IconId = 975736,
