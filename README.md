@@ -1,1 +1,1 @@
-# -Weapon-Swap-Auto-Macros
+# WeaponSwapAutoMacros
