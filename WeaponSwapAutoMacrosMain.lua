@@ -4,8 +4,9 @@ frame:RegisterEvent('PLAYER_LOGOUT')
 frame:RegisterEvent('EQUIPMENT_SETS_CHANGED')
 frame:RegisterEvent('VARIABLES_LOADED')
 frame:RegisterEvent('PLAYER_SPECIALIZATION_CHANGED')
+frame:RegisterEvent("PLAYER_REGEN_ENABLED")
 
-
+local dirty = false
 
 -- Thanks to RCIX from Stackoverflow
 local function DCtableMerge(t1, t2)
@@ -431,8 +432,15 @@ frame:HookScript('OnEvent', function(self, event, arg1, ...)
 
   -- Upon equipment set change or spec change, recreate all the macros
   elseif event == 'EQUIPMENT_SETS_CHANGED' or event == "PLAYER_SPECIALIZATION_CHANGED" then
+    if InCombatLockdown() then 
+      dirty = true
+    else
+      Recreate()
+    end
+  elseif event == "PLAYER_REGEN_ENABLED" and dirty then
     Recreate()
-    
+    dirty = false
+
   -- Upon logout or ui reload make sure the saved variables are available in global space for write out
   elseif event == "PLAYER_LOGOUT" then
     _G["WeaponSwapAutoMacros"] = WeaponSwapAutoMacros; 
